@@ -64,8 +64,3 @@ API ini dirancang untuk diintegrasikan dengan aplikasi **Desktop** maupun **Mobi
 Pull requests and feature suggestions are welcome.
 
 Pull request dan saran fitur baru sangat diterima.
-
-## License / Lisensi
-BintangSry
-
-Proyek ini berlisensi **MIT**.
