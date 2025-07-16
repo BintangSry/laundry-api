@@ -50,12 +50,14 @@ You can find the complete list of endpoints in the **`routes/api.php`** file.
 Daftar lengkap endpoint dapat dilihat di file **`routes/api.php`**.
 
 endpoint umum:
+```
 Route::apiResource('users', UserController::class);
 Route::apiResource('pesanan', PesananController::class);
 Route::apiResource('detail', DetailPesananController::class);
 Route::apiResource('layanan', LayananController::class);
 Route::apiResource('pembayaran', PembayaranController::class);
 Route::post('/login', [UserController::class, 'login']);
+```
 
 ## Usage / Penggunaan
 This API is designed to be integrated with **Desktop** and **Mobile** applications.
