@@ -49,11 +49,13 @@ You can find the complete list of endpoints in the **`routes/api.php`** file.
 
 Daftar lengkap endpoint dapat dilihat di file **`routes/api.php`**.
 
-Example common endpoints / Contoh endpoint umum:
-- `GET /api/resource` : Fetch data / Ambil data
-- `POST /api/resource` : Create new data / Tambah data
-- `PUT /api/resource/{id}` : Update data / Update data
-- `DELETE /api/resource/{id}` : Delete data / Hapus data
+endpoint umum:
+Route::apiResource('users', UserController::class);
+Route::apiResource('pesanan', PesananController::class);
+Route::apiResource('detail', DetailPesananController::class);
+Route::apiResource('layanan', LayananController::class);
+Route::apiResource('pembayaran', PembayaranController::class);
+Route::post('/login', [UserController::class, 'login']);
 
 ## Usage / Penggunaan
 This API is designed to be integrated with **Desktop** and **Mobile** applications.
